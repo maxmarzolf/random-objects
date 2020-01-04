@@ -6,7 +6,7 @@ class Socks:
         self.brand = brand
         self.style = style
 
-    def is_soft(fabric):
+    def are_soft(fabric):
         types_of_fabric = ['wool', 'cotton', 'cashmere']
         if fabric in types_of_fabric:
             return print('your socks are soft')
@@ -16,4 +16,4 @@ class Socks:
 
 my_sock = Socks('red', 10, 'polyester', 'Nike', 'tube')
 print(vars(my_sock))
-Socks.is_soft('polyester')
+Socks.are_soft('polyester')
