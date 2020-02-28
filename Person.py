@@ -65,3 +65,15 @@ person.ethnicity()
 print(person._gender, person._name, person._height, person._weight, person._eye_color, person._hair_color, person._ethnicity)
 
 
+class Emotion:
+    def __init__(self, _mood, _intensity):
+        self._mood = _mood
+        self._intensity = _intensity
+
+    def mood(self):
+        possible_moods = ['happy', 'sad', 'angry', 'tired', 'annoyed', 'content', 'calm']
+        current_mood = random.choice(possible_moods)
+        self._mood = current_mood
+
+    def intensity(self, factor):
+        self._intensity = factor
